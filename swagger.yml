@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: "RP Flask REST API"
+  description: "An API about people and notes"
+  version: "1.0.0"
+servers:
+  - url: "/api"
+paths:
+  /project:
+    get:
+      operationId: "Project.read_all"
+      tags:
+        - "Project"
+      summary: "Read the list of projects"
+      responses:
+        "200":
+          description: "Successfully read projects list"
